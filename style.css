@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/restaurant2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+#gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 20px 10px 5px;
+    transition: transform 0.3s ease;
+}
+#gallery img:hover {
+    transform: scale(1.05);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto 50px;
+    padding: 15px 25px;
+    background-color: rgba(191, 45, 45, 0.9);
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: #7dd281;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #009246;
+}
+section {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #6b4f4f;
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #6b4f4f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    color: #8a5a44;
+    font-size: 26px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+section p {
+    color: #4a4a4a;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 14px 0;
+}
+.green {
+    color: #009246;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: #ce2b37;
+}
+#menu p {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.book-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #009246;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+   transition: background-color 0.3s ease, transform 0.1s ease;
+.book-button:hover {
+    background-color: #ce2b37;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+    h1 {
+    font-size: 38px;
+    }
+    #gallery img {
+    width: 100%;
+    max-width: 250px;
+    }
+    nav {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    }
+    section {
+    padding: 20px;
+    }
+    .book-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    
+    }
+    #menu p {
+    font-size: 16px;
+    }
+    nav a {
+    font-size: 16px;
+}
+
+}
+#contact p {
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 18px;
+}
+#contact a {
+    color: #6b4f4f;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #009246;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(107, 79, 79, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+#menu h3 {
+    border-bottom: 2px solid #d6c2b5;
+    padding-bottom: 8px;
+}
+#menu p span {
+    color: #ce2b37;
+    font-weight: bold;
+    margin-left: 20px;
+}
+#about p {
+    font-style: italic;
+}
+#gallery p {
+    font-size: 14px;
+    color: #6b4f4f;
+    margin-top: -10px;
+    font-style: italic;
+}
+.book-button:active {
+    transform: scale(0.97);
+}
